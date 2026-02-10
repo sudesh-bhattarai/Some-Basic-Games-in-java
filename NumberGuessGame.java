@@ -18,7 +18,7 @@ public class NumberGuessGame extends JFrame implements ActionListener {
         setSize(350, 300);
         setLayout(new GridLayout(7, 1));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        
         targetNumber = random.nextInt(100) + 1;
 
         JLabel instruction = new JLabel("Guess a number between 1 and 100", JLabel.CENTER);
