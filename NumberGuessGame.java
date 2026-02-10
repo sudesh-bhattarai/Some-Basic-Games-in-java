@@ -2,7 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
 import javax.swing.*;
-
+import javax.swing.border.EmptyBorder;
 public class NumberGuessGame extends JFrame implements ActionListener {
 
     Random random = new Random();
@@ -17,8 +17,9 @@ public class NumberGuessGame extends JFrame implements ActionListener {
         setTitle("Guess the Number");
         setSize(350, 300);
         setLayout(new GridLayout(7, 1));
+        ((JPanel) getContentPane()).setBorder(new EmptyBorder(10, 10, 10, 10));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+
         targetNumber = random.nextInt(100) + 1;
 
         JLabel instruction = new JLabel("Guess a number between 1 and 100", JLabel.CENTER);
