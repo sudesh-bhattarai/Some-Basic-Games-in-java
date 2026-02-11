@@ -6,7 +6,7 @@ public class TicTacToe extends JFrame implements ActionListener {
 
     JButton[] buttons = new JButton[9];
     boolean playerX = true; // true = X, false = O
-
+    
     TicTacToe() {
         setTitle("Tic Tac Toe");
         setSize(300, 300);
