@@ -23,7 +23,8 @@ public class CoinTossGame {
             if (guess.equalsIgnoreCase(result)) {
                 System.out.println("Correct Guess!");
                 score++;
-            } else {
+            } 
+            else {
                 System.out.println("Wrong Guess!");
             }
 
